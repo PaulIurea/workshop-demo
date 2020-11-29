@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header, footer {
+            background-color: #FFA500;
+            height: 100px;
+            font-size: 35px;
+            text-align: center;
+            line-height: 100px;            
+        }
+
+        section {
+            height: 100px;
+            font-size: 25px;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .first_row{       
+            float: left;     
+            width: 33.33%;
+            background-color: #30948D;            
+        }
+
+        section:nth-child(odd){
+            background-color: #9E1212;
+        }
+
+        section.clearfix{
+            background-color: #394549;
+            height: 300px;        
+        }
+
+        .clearfix{
+            clear: left;
+            overflow: auto;
+        }
+
+        aside {
+            float: left;
+            color: white;
+            background-color: #a6b747;
+            margin-top: 40px;
+            margin-left: 40px;
+            height: 220px;
+            width: 35%;
+            border-style: solid;
+            border-color: white;
+            border-width: 1px;
+            border: 1px solid white;
+        }
+
+        div {            
+            background-color: #6ea3da;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>&lt;header&gt; #FFA500</header>    
+    <section class="first_row">&lt;section&gt; #30948D</section>
+    <section class="first_row">&lt;section&gt; #9E1212</section>
+    <section class="first_row">&lt;section&gt; #30948D</section>
+    
+    <section class="clearfix">
+        &lt;section&gt; #394549
+        <aside>&lt;aside&gt; #394549</aside>
+        <div>&lt;div&gt; #6ea3da</div>
+    </section>
+    
+    <footer>&lt;footer&gt; #FFA500</footer>
+</body>
+</html>
